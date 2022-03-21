@@ -1,5 +1,5 @@
 package nz.ac.arastudent.xil0393;
-
+//exercise 4-10
 public class Ex4 {
 
 	public String SumAndAverage() {

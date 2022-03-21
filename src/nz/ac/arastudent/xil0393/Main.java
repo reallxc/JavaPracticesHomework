@@ -23,7 +23,17 @@ public class Main {
 //		run13.go();
 //		Ex14Controller run14 = new Ex14Controller(view);
 //		run14.go();
-		Ex15Controller run15 = new Ex15Controller(view);
-		run15.go();
+//		Ex15Controller run15 = new Ex15Controller(view);
+//		run15.go();
+//      Ex16Controller run16 = new Ex16Controller(view);
+//      run16.go();
+//      Ex17Controller run17 = new Ex17Controller(view);
+//      run17.go();
+//      Ex18Controller run18 = new Ex18Controller(view);
+//      run18.go();
+//      Ex19Controller run19 = new Ex19Controller(view);
+//      run19.go();
+        Ex21Controller run21 = new Ex21Controller(view);
+        run21.go();
     }
 }
