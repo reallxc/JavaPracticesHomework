@@ -1,15 +1,28 @@
 package nz.ac.arastudent.xil0393;
 
 public class Ex21Controller extends ExerciseController {
-    private int[] intArray = {1,2,3,4,5,6};
-    Ex21 ex21 = new Ex21(intArray);
     public Ex21Controller(IView theView) {
         super(theView);
     }
 
     @Override
     protected void doStuff() {
-        Ex21.ReverseArrayTest(ex21);
-        this.myView.say(ex21.intArray[0]);
+        //SCOPE 1
+        int[] a = new int[]{12,56,34,79,26};
+        this.myView.say("Original:");
+        this.outPutArray(a);
+        //definition and initialization of an object
+        Ex21 reArray = new Ex21(a);
+        this.myView.say("Reversed:");
+        this.outPutArray(a);
+    }
+    public void outPutArray(int[] array) {
+        //SCOPE 2
+        String output="{";
+        for (int i:array
+        ) {
+            output = output + i + ",";
+        }
+        this.myView.say(output + "}");
     }
 }
