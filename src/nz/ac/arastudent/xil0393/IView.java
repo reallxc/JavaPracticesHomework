@@ -1,10 +1,12 @@
 package nz.ac.arastudent.xil0393;
 
 public interface IView {
-    public String get();
-    public String get(String prompt);
+    String get();
+    String get(String prompt);
 
-    public <T> void say(T message);
-    public void start();
-    public void stop();
+    <T> void say(T message);
+    <T> void add(T message);
+    void start();
+    void stop();
+
 }

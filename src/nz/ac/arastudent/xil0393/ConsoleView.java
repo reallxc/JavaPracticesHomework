@@ -27,6 +27,11 @@ public class ConsoleView implements IView{
     }
 
     @Override
+    public <T> void add(T message) {
+        System.out.print(message);
+    }
+
+    @Override
     public void start() {
         System.out.println("=Console Started=");
     }
